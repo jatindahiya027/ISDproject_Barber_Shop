@@ -1,0 +1,49 @@
+.navbar-default {
+    background: #333333;
+}
+.navbar-default.scrolled {
+    background: #FFFFFF;
+}
+.navbar li {
+    margin-left : 2em;
+    margin-right : 4em;
+}
+.navbar-image {
+    margin-right : 3em;
+}
+.navbar-custom-design {
+    font-size:2vw; 
+    color:#EEB365;
+
+}
+.navbar-custom-button{
+    font-size:2vw; background-color:#EEB365; COLOR:#333333
+}
+#section1 { 
+   
+    background-image: url('/images/background00.png');
+              
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#section2{
+    background-image: url('/images/background20.png');
+              
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#section3{
+    background-image: url('/images/background3.png');
+              
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.buttonn{
+    background-color:#F4F4F4; 
+    COLOR:#333333;
+    font-size:2vw;
+    
+}
