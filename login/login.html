@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Login Page</title>
+   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Title bar icons -->
+   <link rel="icon" href="1300330.svg"" type=" image/x-icon">
+
+   <!-- Bootstrap-css -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+   <!-- Text-css -->
+   <link rel="stylesheet" type="text/css" href="login.css">
+
+   <!-- Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+
+</head>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+   integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<body>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-5 mx-auto">
+            <div id="first">
+               <div class="myform form ">
+                  <div class="logo mb-3">
+                     <div class="col-md-12 text-center">
+                        <h1>Login</h1>
+                     </div>
+                  </div>
+                  <form action="" method="post" name="login">
+                     <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"
+                           placeholder="Enter email">
+                     </div>
+                     <div class="form-group">
+                        <label for="exampleInputEmail1">Password</label>
+                        <input type="password" name="password" id="password" class="form-control"
+                           aria-describedby="emailHelp" placeholder="Enter Password">
+                     </div>
+                     <div class="form-group">
+                        <label for="exampleInputEmail1"> Select User Type</label>
+                        <select id="usertype" class="form-control">
+                           <option value="Admin">Admin</option>
+                           <option value="Employee">Employee</option>
+                        </select>
+                     </div>
+
+                     <div class="col-md-12 text-center ">
+                        <button type="submit" onclick="login()" class="form-control btn btn-success">Login</button>
+                     </div>
+
+                  </form>
+
+               </div>
+            </div>
+
+
+            <script>
+               function login() {
+                  var email = document.getElementById("email").value;
+                  var password = document.getElementById("password").value;
+                  var usertype = document.getElementById("usertype").value;
+                  if (email == "admin@gmail.com" && password == "a123" && usertype == "Admin") {
+                     window.location.href = "/admin/admin.html";
+                  }
+                  else if (email == "employee@gmail.com" && password == "e123" && usertype == "Employee") {
+                     window.location.href = "employee.html";
+                  }
+                  else {
+                     window.location.href = "login.html";
+                     alert("Inc");
+                  }
+               }
+
+            </script>
+
+</body>
+
+</html>
