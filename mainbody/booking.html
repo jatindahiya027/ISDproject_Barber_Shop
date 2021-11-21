@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book slot</title>
+    <link rel="icon" href="/images/logo_title.png" type="image/icon type">
+    <link rel="stylesheet" href="/css/booking.css">
+
+
+</head>
+
+<body>
+
+
+    <nav>
+        <img src="/images/logo_black.png" alt="" class="image" />
+        <h1>
+            BOOKING
+        </h1>
+    </nav>
+
+    <hr>
+
+    <div class="top-input">
+        <div class="service">
+            <label for="select-service">Select the service</label>
+            <br>
+            <select name="Select_Service" id="select-service" onchange="handleServiceChange(this)">
+            </select>
+        </div>
+        <div class="price" id="price">
+            <label>Price</label>
+            <br>
+            --
+        </div>
+
+
+    </div>
+    <div class="top-input">
+        <div class="service">
+            <label for="select-service">Date</label>
+            <br>
+            <input type="date" id="select-date"></input>
+        </div>
+        <div class="price" id="time">
+            <label>Time</label>
+            <br>
+            --
+        </div>
+
+
+    </div>
+
+
+    <div class="center">
+        <h2>Please choose the time</h2>
+
+        <ul class="center" id="timings"></ul>
+
+
+
+    </div>
+    <div class="continue">
+        <button>Continue</button>
+    </div>
+
+    <script src="/js/booking.js"></script>
+
+</body>
+
+</html>

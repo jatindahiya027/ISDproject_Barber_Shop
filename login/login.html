@@ -2,33 +2,23 @@
 <html>
 
 <head>
-   <title>Login Page</title>
+   <title>Barber shop login</title>
    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <!-- Title bar icons -->
-   <link rel="icon" href="1300330.svg"" type=" image/x-icon">
+   <link rel="icon" href="/images/logo_title.png" type="image/icon type">
 
    <!-- Bootstrap-css -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
    <!-- Text-css -->
-   <link rel="stylesheet" type="text/css" href="login.css">
+   <link rel="stylesheet" type="text/css" href="/css/login.css">
 
-   <!-- Fonts -->
-   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
 
 
 </head>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -63,7 +53,7 @@
                      </div>
 
                      <div class="col-md-12 text-center ">
-                        <button type="submit" onclick="login()" class="form-control btn btn-success">Login</button>
+                        <button type="button" onclick="logn()" class="form-control btn btn-success">Login</button>
                      </div>
 
                   </form>
@@ -71,25 +61,11 @@
                </div>
             </div>
 
+            <script src="/js/login.js">
 
-            <script>
-               function login() {
-                  var email = document.getElementById("email").value;
-                  var password = document.getElementById("password").value;
-                  var usertype = document.getElementById("usertype").value;
-                  if (email == "admin@gmail.com" && password == "a123" && usertype == "Admin") {
-                     window.location.href = "/admin/Admin.html";
-                  }
-                  else if (email == "employee@gmail.com" && password == "e123" && usertype == "Employee") {
-                     window.location.href = "employee.html";
-                  }
-                  else {
-                     window.location.href = "login.html";
-                     alert("Inc");
-                  }
-               }
 
             </script>
+
 
 </body>
 
