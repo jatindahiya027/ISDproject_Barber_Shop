@@ -40,3 +40,13 @@ const handleTimeChange = (event) => {
     time.innerHTML = `<label>Time</label> <br> ${newTime}`
 }
 
+function bookslot(){
+    email = document.getElementById('email').value;
+    alert(email+" booking confirmed")
+}
+
+    document.getElementById("cont").onclick = function () {
+        location.href = "bookingfinal.html";
+    };
+
+

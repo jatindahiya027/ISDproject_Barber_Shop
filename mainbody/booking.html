@@ -18,17 +18,17 @@
     <nav>
         <img src="/images/logo_black.png" alt="" class="image" />
 
-        <h1>
+        <h1 style="font-family: sans-serif;">
             BOOKING
         </h1>
 
     </nav>
 
     <hr>
-    <div style="background-color: #F4F4F4;">
+    <div style="background-color: #F4F4F4; height: 100vh;">
         <div class="top-input">
             <div class="service">
-                <label for="select-service"><b>The service </b></label>
+                <label for="select-service" ><b>The service </b></label>
                 <br>
                 <select name="Select_Service" id="select-service" onchange="handleServiceChange(this)">
                 </select>
@@ -65,8 +65,9 @@
 
 
         </div>
+
         <div class="continue" style="background-color: #F4F4F4;">
-            <button>Continue</button>
+            <button class="bookfinal" id=cont >Continue</button>
         </div>
 
         <script src="/js/booking.js"></script>
