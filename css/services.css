@@ -17,10 +17,25 @@
     color:#EEB365;
 
 }
+.navbar-custom-design:hover {
+    font-size:2vw; 
+    color:#FFFFFF;
+
+}
+.activebar{
+    font-size:2vw;
+    color:#FFFFFF;
+}
+.activebar:hover{
+    font-size:2vw;
+    color:#FFFFFF;
+}
 .navbar-custom-button{
     font-size:2vw; background-color:#EEB365; COLOR:#333333
 }
-
+.navbar-custom-button:hover{
+    font-size:2vw; background-color:#ffffff; COLOR:#333333;
+}
 .service_container{
     display: flex;
     flex-direction: column;

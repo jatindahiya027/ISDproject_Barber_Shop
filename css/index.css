@@ -6,18 +6,26 @@
 }
 .navbar li {
     margin-left : 2em;
-    margin-right : 4em;
+    margin-right : 2em;
 }
 .navbar-image {
-    margin-right : 3em;
+    margin-right : 1em;
 }
 .navbar-custom-design {
     font-size:2vw; 
     color:#EEB365;
 
 }
+.navbar-custom-design:hover {
+    font-size:2vw; 
+    color:#FFFFFF;
+
+}
 .navbar-custom-button{
     font-size:2vw; background-color:#EEB365; COLOR:#333333
+}
+.navbar-custom-button:hover{
+    font-size:2vw; background-color:#ffffff; COLOR:#333333;
 }
 #section1 { 
    
@@ -27,6 +35,7 @@
     background-attachment: fixed;
     /* background-size: cover; */
      background-size: 100% 100%; 
+     
 }
 #section2{
     background-image: url('/images/background20.png');
@@ -50,6 +59,23 @@
     font-size:2vw;
     
 }
+.activebar{
+    font-size:2vw;
+    color:#FFFFFF;
+}
+.activebar:hover{
+    font-size:2vw;
+    color:#FFFFFF;
+}
+.customlink{
+    color:#333333;
+    padding-left: 7%;
+}
+.customlink:hover{
+    color:#FFFFFF;
+    padding-left: 7%;
+}
+
 
 
     
