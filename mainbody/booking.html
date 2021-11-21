@@ -10,7 +10,6 @@
     <link rel="icon" href="/images/logo_title.png" type="image/icon type">
     <link rel="stylesheet" href="/css/booking.css">
 
-
 </head>
 
 <body>
@@ -18,58 +17,60 @@
 
     <nav>
         <img src="/images/logo_black.png" alt="" class="image" />
+
         <h1>
             BOOKING
         </h1>
+
     </nav>
 
     <hr>
+    <div style="background-color: #F4F4F4;">
+        <div class="top-input">
+            <div class="service">
+                <label for="select-service"><b>The service </b></label>
+                <br>
+                <select name="Select_Service" id="select-service" onchange="handleServiceChange(this)">
+                </select>
+            </div>
+            <div class="price" id="price">
+                <label><b>Price</b></label>
+                <br>
+                --
+            </div>
 
-    <div class="top-input">
-        <div class="service">
-            <label for="select-service">Select the service</label>
-            <br>
-            <select name="Select_Service" id="select-service" onchange="handleServiceChange(this)">
-            </select>
+
         </div>
-        <div class="price" id="price">
-            <label>Price</label>
-            <br>
-            --
+        <div class="top-input">
+            <div class="service">
+                <label for="select-service"><b>Date</b></label>
+                <br>
+                <input type="date" id="select-date"></input>
+            </div>
+            <div class="price" id="time">
+                <label><b>Time</b></label>
+                <br>
+                --
+            </div>
+
+
         </div>
 
 
-    </div>
-    <div class="top-input">
-        <div class="service">
-            <label for="select-service">Date</label>
-            <br>
-            <input type="date" id="select-date"></input>
+        <div class="center">
+            <h2>Please choose the time</h2>
+
+            <ul class="center" id="timings"></ul>
+
+
+
         </div>
-        <div class="price" id="time">
-            <label>Time</label>
-            <br>
-            --
+        <div class="continue" style="background-color: #F4F4F4;">
+            <button>Continue</button>
         </div>
 
-
+        <script src="/js/booking.js"></script>
     </div>
-
-
-    <div class="center">
-        <h2>Please choose the time</h2>
-
-        <ul class="center" id="timings"></ul>
-
-
-
-    </div>
-    <div class="continue">
-        <button>Continue</button>
-    </div>
-
-    <script src="/js/booking.js"></script>
-
 </body>
 
 </html>

@@ -1,10 +1,11 @@
 const services = [
     { title: "Select a service", price: '--' },
-    { title: "Haircut", price: 100 },
+    { title: "Haircut", price: 130 },
     { title: "Beard", price: 50 },
+    {title: "Face Massage", price: 70},
 ];
 
-const timings = ["09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30"]
+const timings = ["11:00", "11:30", "12:00", "12:30", "13:00", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30"]
 
 const serviceSelector = document.getElementById('select-service');
 const price = document.getElementById('price');
