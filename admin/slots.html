@@ -81,29 +81,43 @@
         <td>Harsh Chauhan</td>
         <td>9845423434</td>
         <td>12:30pm - 1pm</td>
-        <td><button class="btn"><img src="/images/delete.png" style="width:15%;height:100%;"></button></td>
+        <td><button class="btn" id="del"><img src="/images/delete.png" style="width:15%;height:100%;"></button></td>
       </tr>
       <tr>
         <td>Jatin Dahiya</td>
         <td>9845343464</td>
         <td>2pm - 2:30pm</td>
-        <td><button class="btn"><img src="/images/delete.png" style="width:15%;height:100%;"></button></td>
+        <td><button class="btn"id="del2"><img src="/images/delete.png" style="width:15%;height:100%;"></button></td>
       </tr>
       <tr>
         <td>Samarpit Sachan</td>
         <td>9234563434</td>
         <td>2:30pm - 3pm</td>
-        <td><button class="btn"><img src="/images/delete.png" style="width:15%;height:100%;"></button></td>
+        <td><button class="btn"id="del3"><img src="/images/delete.png" style="width:15%;height:100%;"></button></td>
       </tr>
       <tr>
         <td>Tanuj</td>
         <td>9864463434</td>
         <td>3:30pm - 4pm</td>
-        <td><button class="btn"><img src="/images/delete.png" style="width:15%;height:100%;"></button></td>
+        <td><button class="btn"id="del4"><img src="/images/delete.png" style="width:15%;height:100%;"></button></td>
       </tr>
 
     </table>
   </div>
+  <script>
+    document.getElementById("del").onclick = function () {
+          alert("You may now change the values in table 1")
+      };
+      document.getElementById("del2").onclick = function () {
+          alert("You may now change the values in table 2")
+      };
+      document.getElementById("del3").onclick = function () {
+          alert("You may now change the values in table 3")
+      };
+      document.getElementById("del4").onclick = function () {
+          alert("You may now change the values in table 4")
+      };
+  </script>
 </body>
 
 </html>
