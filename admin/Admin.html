@@ -69,8 +69,46 @@
 
   </section>
 
+  <div align="center" class="home-content" style="padding-top: 0%;padding-left: 20%;">
+    <h1>Employee</h1>
+    <table style="width:60%">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Adhar no.</th>
+        <th>email</th>
+        <th>mobile</th>
+<th>changes</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Nishant</td>
+        <td>6437*******</td>
+        <td>admin@gmail.com</td>
+        <td>98********</td>
+        <td><button class="btn" id="change">change</button></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>harsh</td>
+        <td>7987******</td>
+        <td>employee@gmail.com</td>
+        <td>73********</td>
+        <td><button class="btn" id="change2">change</button></td>
 
+      </tr>
+      
 
+    </table>
+  </div>
+<script>
+  document.getElementById("change").onclick = function () {
+        alert("You may now change the values in table 1")
+    };
+    document.getElementById("change2").onclick = function () {
+        alert("You may now change the values in table 2")
+    };
+</script>
 </body>
 
 </html>
